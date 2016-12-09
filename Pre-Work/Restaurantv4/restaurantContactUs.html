@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+	<link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
+		<title>
+			Contact Us
+		</title>
+	<style>
+		table {
+		margin-left:auto;
+		margin-right:auto;
+		}
+		td {
+		font-family: cursive;
+		text-align: center;
+		}
+		input {
+		font-family: cursive;
+		}
+		option {
+		font-family: cursive;
+		}
+		body {
+		background-color: #B0E0E6;
+		}
+	</style>
+	</head>
+	<body>
+	<div id="header">
+		<div id="header">
+		<h1 class="ClubName">The Cobalt Club</h1>
+		<hr></hr>
+				<span class="homeLink"><a href="restaurantHomePage.html">Home</a></span>
+				<span class="menuLink"><a href="restaurantMenuPage.html">Menu</a></span>
+				<span class="contactUsLink"><a href="restaurantContactUs.html">Contact Us</a></span>
+		<hr></hr>
+		</div>
+		</div>
+	<form action="cobaltclub.html" method="POST">
+		
+		<table>
+			<tr><td class="requiredField">Name:</td><td><input type="text" name="name"></td></tr>
+
+			<tr><td class="requiredField">Email:</td><td><input type="text" name="email"></td></tr>
+	
+			<tr><td class="requiredField">Phone:</td><td><input type="text" name="phone"></td></tr>
+			<tr><td><br></td></tr>
+			<tr><td class="requiredField">Reason for Inquiry:</td> <td><select name="reason">
+		<option value="Catering">Catering</option>
+		<option value="Private Party">Private Party</option>
+		<option value="Feedback">Feedback</option>
+		<option value="Other">Other</option>
+	</select></td></tr>
+	<tr><td><br></td></tr>
+	<tr><td>Additional information:</td> <td><textarea name="additional info" rows="5">
+	</textarea></td></tr>
+	<tr><td class="requiredField">Have you been to the restaurant? </td><td><input type="radio" name="visit" value="No" checked>No
+			<input type="radio" name="visit" value="Yes">Yes</td></tr>
+	<tr><td><br></td></tr>
+	<tr><td class="requiredField">Best days to contact you:</td><td><input type="checkbox" name="date" value="M">M
+	<input type="checkbox" name="date" value="T">T
+	<input type="checkbox" name="date" value="W">W
+	<input type="checkbox" name="date" value="Th">Th
+	<input type="checkbox" name="date" value="F">F</td>
+	
+	</tr>
+	<tr><td><br></td></tr>
+	<tr><td></td><td><input type="submit" value="Send Request"></td></tr>
+	</table>
+	<div id="footer">
+		<hr></hr>
+			1 Azure Ave., Las Vegas, Nevada, 89148 <br>
+			(555) 555-BLUE
+	</div>
+</form>
+</body>
+</html>
+		

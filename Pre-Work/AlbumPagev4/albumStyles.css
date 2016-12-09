@@ -1,0 +1,40 @@
+li {
+	font-family: 'Arial';
+	color: rgb(0, 150, 0);
+	font-style: italic;
+}
+
+p {
+	font-size: larger;
+}
+
+h3 {
+	font-weight: 700;	
+}
+
+#headtitle {
+	text-decoration: underline overline;	
+	font-family: 'Share Tech Mono';
+}
+
+#albumCover {
+	height: 250px;
+	background-image: url("https://archive.org/services/img/mbid-37072d19-5adc-45ff-a844-1b5c30482c77");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 250px 250px;
+}
+
+tbody td {
+	font-style: italic;
+	background-color: lightblue;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	background-color: orange;
+}

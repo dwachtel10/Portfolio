@@ -1,0 +1,49 @@
+﻿
+@model List<HR_Portal.Models.Opening>
+@{
+    ViewBag.Title = "Openings";
+}
+
+<h2>Openings</h2>
+
+<div class="row">
+    <div class="col-xs-12">
+        
+        <h3>Majors</h3>
+        @Html.ActionLink("Add Opening", "AddOpening", "Admin", null, new {@class = "btn btn-primary"})
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <table class="table table-striped" style="width: auto;">
+            <thead>
+                <tr>
+                    <th>ID#</th>
+                    <th>Job Title</th>
+                    <th>Job Location</th>
+                    <th>Job Description</th>
+                    <th>Contact Phone #</th>
+                    <th>Contact Email</th>
+                </tr>
+            </thead>
+            <tbody>
+            
+            @foreach (var opening in Model)
+            {
+                <tr>
+                    <td>@opening.JobId</td>
+                    <td>@opening.JobTitle</td>
+                    <td>@opening.JobLocation</td>
+                    <td>@opening.JobDescription</td>
+                    <td>@opening.JobPhone</td>
+                    <td>@opening.JobEmail</td>
+                    <td>
+                        @Html.ActionLink("Edit", "EditOpening", "Admin", new {JobID = opening.JobId}, null) |
+                        @Html.ActionLink("Delete", "DeleteOpening", "Admin", new {OpeningID = opening.JobId}, null)
+                    </td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+</div>

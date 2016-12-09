@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<link href="css/bootstrap.css" rel="stylesheet"/>
+	<link href="css/bootstrap-theme.css" rel="stylesheet"/>
+	<link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+	<link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
+		<title>
+			Contact Us
+		</title>
+	<style>
+		table {
+		margin-left:auto;
+		margin-right:auto;
+		}
+		td {
+		font-family: cursive;
+		text-align: center;
+		}
+		input {
+		font-family: cursive;
+		}
+		option {
+		font-family: cursive;
+		}
+		body {
+		background-color: #B0E0E6;
+		}
+	</style>
+	<script>
+	function validateForm()
+		{
+			var nameInput = document.forms["contact"]["yourName"].value;
+			var emailInput = document.forms["contact"]["email"].value;
+			var phoneInput = document.forms["contact"]["phone"].value;
+			var additionalInfo = document.forms["contact"]["additionalInfo"].value;
+			var inquiryReason = document.getElementsByName("reason")[0].value;
+			var M = document.getElementById("Monday").checked;
+			var T = document.getElementById("Tuesday").checked;
+			var W = document.getElementById("Wednesday").checked;
+			var Th = document.getElementById("Thursday").checked;
+			var F = document.getElementById("Friday").checked;
+			var checkedDays = [M, T, W, Th, F];
+			if (nameInput == null || nameInput ==""){
+			alert("Please enter your name.")};
+			if ((emailInput == null || emailInput =="") && (phoneInput == null || phoneInput =="")){
+			alert("Please fill in either the Email or Phone form")};
+			if ((inquiryReason == "Other") && (additionalInfo == null || additionalInfo == "")){
+			alert("Please tell us the reason you'd like to contact us.")};
+			if (!checkedDays.includes(true)){
+			alert("Please let us know what day we should contact you.")};
+			return false;
+		}
+	</script>
+	</head>
+	<body>
+	<div id="header">
+		<div id="header" class="container">
+		<h1 class="ClubName">The Cobalt Club</h1>
+		<hr></hr>
+				<ul class="nav nav-pills">
+				<li role="presentation"><a href="restaurantHomePage.html" class="glyphicon glyphicon-home"></a></li>
+				<li role="presentation"><a href="restaurantMenuPage.html">Menu</a></li>
+				<li role="presentation" class="active"><a href="restaurantContactUs.html">Contact Us</a></li>
+				<br><br>
+		<hr></hr>
+		</div>
+		</div>
+	<form name="contact" method="POST">
+		
+		<table>
+			<tr><td class="requiredField">Name:</td><td><input type="text" name="yourName"></td></tr>
+
+			<tr><td class="requiredField">Email:</td><td><input type="text" name="email"></td></tr>
+	
+			<tr><td class="requiredField">Phone:</td><td><input type="text" name="phone"></td></tr>
+			<tr><td><br></td></tr>
+			<tr><td class="requiredField">Reason for Inquiry:</td> <td><select name="reason">
+		<option value="Catering" name="reason">Catering</option>
+		<option value="Private Party" name="reason">Private Party</option>
+		<option value="Feedback" name="reason">Feedback</option>
+		<option value="Other" name="reason">Other</option>
+	</select></td></tr>
+	<tr><td><br></td></tr>
+	<tr><td>Additional information:</td> <td><textarea name="additionalInfo" rows="5"></textarea></td></tr>
+	<tr><td class="requiredField">Have you been to the restaurant? </td><td><input type="radio" name="visit" value="No" checked>No
+			<input type="radio" name="visit" value="Yes">Yes</td></tr>
+	<tr><td><br></td></tr>
+	<tr><td class="requiredField">Best days to contact you:</td><td><input type="checkbox" name="date" value="M" id="Monday">M
+	<input type="checkbox" name="date" value="T" id="Tuesday">T
+	<input type="checkbox" name="date" value="W" id="Wednesday">W
+	<input type="checkbox" name="date" value="Th" id="Thursday">Th
+	<input type="checkbox" name="date" value="F" id="Friday">F</td>
+	
+	</tr>
+	<tr><td><br></td></tr>
+	<tr><td></td><td><input type="submit" value="Send Request" onclick="return validateForm()"></td></tr>
+	</table>
+	<div id="footer">
+		<hr></hr>
+			1 Azure Ave., Las Vegas, Nevada, 89148 <br>
+			(555) 555-BLUE
+	</div>
+</form>
+</body>
+</html>
+		

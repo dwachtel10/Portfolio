@@ -1,0 +1,52 @@
+#results {
+	display: none;
+	width: 325px;
+	height: 400px;
+	background-color: lightblue;
+	border-radius: 4px;
+	padding: 6px 0px 0px 0px;
+}
+
+input {
+	width: 75px;
+	border: 2px solid gray;
+	border-radius: 2px;
+	padding: 2px;
+	font-family: cursive;
+}
+
+.header {
+  background-color: #6699ff;
+  text-align: left;
+}
+
+#startButton {
+  border: 1px solid;
+  background-color: #b3cccc;
+  width: 90px;
+  height: 60px;
+  border-radius: 4px;
+  font-family: cursive;
+}
+
+html {
+	font-family: cursive;
+}
+
+#tableTitle {
+	font-weight: bold;
+	font-size: x-large;
+	text-decoration: underline;
+}
+table {
+	border-spacing: 2px;
+	border: none;
+}
+
+td, th {
+	padding: 5px;
+}
+
+td {
+	background-color: lightgreen;
+}

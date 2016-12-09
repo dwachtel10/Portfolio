@@ -1,0 +1,65 @@
+﻿@model HR_Portal.Models.Opening
+@{
+    ViewBag.Title = "AddOpening";
+}
+
+<h2>AddOpening</h2>
+
+<div class="row">
+    <div class="col-xs-12">
+        <h3>Add Opening</h3>
+        @Html.ActionLink("Return to List", "Openings", "Admin")
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        @using (Html.BeginForm("AddOpening", "Admin", FormMethod.Post, new {id = "addOpeningForm"})) { 
+            @Html.ValidationSummary()
+
+            @*<div class="validation-summary-errors" data-valmsg-summary="true">
+                <ul>
+                    <li>Enter a job title.</li>
+                    <li>Enter location.</li>
+                    <li>Enter a description.</li>
+                    <li>Enter a contact number.</li>
+                    <li>Enter a contact email.</li>
+                </ul>
+
+            </div>*@
+            <div class="form-group">
+                <label>Job Title</label>
+                @Html.TextBoxFor(m => m.JobTitle, new { @class = "form-control", placeholder = "Job Title" })
+                
+            </div>
+            <div class="form-group">
+                <label>Job Location</label>
+                @Html.TextBoxFor(m => m.JobLocation, new { @class = "form-control", placeholder = "Job Location" })
+            </div>
+            <div class="form-group">
+                <label>Job Description</label>
+                @Html.TextBoxFor(m => m.JobDescription, new { @class = "form-control", placeholder = "Job Decription" })
+            </div>
+            <div class="form-group">
+                <label>Contact Phone:</label>
+                @Html.TextBoxFor(m => m.JobPhone, new { @class = "form-control", placeholder = "Contact Phone" })
+            </div>
+            <div class="form-group">
+                <label>Contact Email:</label>
+                @Html.TextBoxFor(m => m.JobEmail, new { @class = "form-control", placeholder = "Contact Email" })
+            </div>
+
+
+            <button type="submit" class="btn btn-sm btn-primary">Save</button>
+        }
+       
+    </div>
+</div>     
+
+@section Scripts
+{
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    @*<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>*@
+    <script src="~/Scripts/additional-methods.js"></script>
+    <script src="~/Scripts/app/jquery-validate-defaults.js"></script>
+    <script src="~/Scripts/app/addOpeningValidation.js"></script>
+} 

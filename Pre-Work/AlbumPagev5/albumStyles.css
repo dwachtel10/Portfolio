@@ -1,0 +1,70 @@
+li {
+	font-family: 'Arial';
+	color: rgb(0, 150, 0);
+	font-style: italic;
+}
+
+p {
+	font-size: larger;
+}
+
+h3 {
+	font-weight: 700;
+	color:black;
+}
+
+#headtitle {
+	text-decoration: underline overline;	
+	font-family: 'Share Tech Mono';
+}
+
+#albumCover {
+	background-position: center;
+	height: 250px;
+	width: 250px;
+	background-image: url("https://upload.wikimedia.org/wikipedia/en/d/dc/More_Than_Just_A_Dream.jpg");
+	background-repeat: no-repeat;
+	background-size: 250px 250px;
+}
+
+.rowhead{
+	font-weight: bold;
+	background-color: gray;
+	text-align: center;
+	}
+
+.header {
+	text-align: center;
+	font-family: 'Share Tech Mono';
+	font-size: 40px;
+	color: gray;
+}	
+	
+.cell {
+	text-align: center;
+	font-style: italic;
+}
+
+.col-sm-4 {
+	border: 1px solid;
+}
+
+
+.cell:nth-child(even){
+	background-color: beige;
+}
+
+.cell:nth-child(odd){
+	background-color: lightblue;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	background-color: orange;
+}
+
+

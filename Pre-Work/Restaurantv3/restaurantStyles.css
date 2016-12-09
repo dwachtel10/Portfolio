@@ -1,0 +1,36 @@
+#header {
+	color: blue;
+	font-family: cursive;
+}
+
+.ClubName {
+	text-align: center;
+	font-family: 'Audiowide';
+}
+
+.homeLink {
+	position:relative;
+	left:0px;
+	display: inline;
+}
+
+.menuLink {
+	position: relative;
+	left: 20px;
+	display: inline;
+}
+
+.contactUsLink {
+	position: relative;
+	left: 40px;
+	display: inline;
+}
+
+#footer {
+	font-family: cursive;
+	text-align: center;
+	color: blue;
+}
+.requiredField {
+	font-weight: bold;
+}

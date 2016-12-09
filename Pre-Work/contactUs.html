@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact Us</title>
+</head>
+<body>
+<form action="mycompany.com" method="POST">
+<table>
+	<tr><td>First Name:</td><td><input type="text" name="firstName"></td></tr>
+	<tr><td><br></td></tr>
+	<tr><td>Last Name:</td><td><input type="text" name="lastName"></td></tr>
+	<tr><td><br></td></tr>
+	<tr><td>Email:</td><td><input type="text" name="email"></td></tr>
+	<tr><td><br></td></tr>
+	<tr><td>Type of License:</td><td><input type="radio" name="license" value="Business" checked>Business 
+	<input type="radio" name="license" value="Personal">Personal</td></tr>
+	<tr><td><br></td></tr>
+	<tr><td><br></td></tr>
+	<tr><td>Reason:</td> <td><select name="reason">
+		<option value="null">Select a Reason</option>
+		<option value="Software Support">Software Support</option>
+		<option value="Hardware Support">Hardware Support</option>
+		<option value="Information Request">Information Request</option>
+	</select></td></tr>
+	<tr><td><br></td></tr>
+	<tr><td>Additional information:</td> <td><textarea name="additional info" rows=5>
+	</textarea></td></tr>
+	<tr><td><br></td></tr>
+	<tr><td></td><td><input type="checkbox" name="TOS" value="read">I have read the terms of service.<td></tr>
+	<tr><td><br></td></tr>
+	<tr><td></td><td><input type="submit" value="Send Request"></td></tr>
+	</table>
+</form>
+</body>
+</html>

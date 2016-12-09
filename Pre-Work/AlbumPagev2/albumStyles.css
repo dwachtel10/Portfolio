@@ -1,0 +1,12 @@
+li {
+font-family: 'Arial';
+color: rgb(0, 150, 0);
+}
+
+h3 {
+font-weight: 700;	
+}
+
+#headtitle {
+text-decoration: underline overline;	
+}

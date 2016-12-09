@@ -1,0 +1,15 @@
+li {
+font-family: 'Audiowide', cursive;
+color: rgb(0, 150, 0);
+}
+
+@font-face {
+font-family: "Audiowide", cursive;
+font-style:normal;
+font-weight:400;
+src: url("https://fonts.googleapis.com/css?family=Audiowide");
+}
+
+#headtitle {
+	font-family: 'Audiowide';
+}

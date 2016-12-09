@@ -1,0 +1,56 @@
+﻿@model HR_Portal.Models.Opening
+@{
+    ViewBag.Title = "EditOpening";
+}
+
+<h2>Edit Opening</h2>
+
+<div class="row">
+    
+    <div class="col-xs-12 col-sm-9">
+        <div class="row">
+            <div class="col-xs-12">
+                <h3>Edit Opening #@Model.JobId</h3>
+                <div class="row">
+                    @using (Html.BeginForm())
+                    {
+                        <div class="col-xs-12 col-sm-7">
+                            <div class="panel panel-primary">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">Job Details</h4>
+                                </div>
+                                <div class="panel-body">
+                                    @Html.HiddenFor(m => m.JobId)
+                                    <div class="form-group">
+                                        <label>Job Title:</label>
+                                        @Html.TextBoxFor(m => m.JobTitle, new { @class = "form-control", placeholder = "Job Title" })
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Job Location:</label>
+                                        @Html.TextBoxFor(m => m.JobLocation, new { @class = "form-control", placeholder = "Job Location" })
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Job Description:</label>
+                                        @Html.TextBoxFor(m => m.JobDescription, new { @class = "form-control", placeholder = "Job Description" })
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Contact Phone:</label>
+                                        @Html.TextBoxFor(m => m.JobPhone, new { @class = "form-control", placeholder = "Contact Phone" })
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Contact Email:</label>
+                                        @Html.TextBoxFor(m => m.JobEmail, new { @class = "form-control", placeholder = "Contact Email" })
+                                    </div>
+
+                                    @*TODO: Figure out why this keeps erasing the field*@
+                                    @*TODO: Add address edits*@
+                                    <button class="btn btn-primary">Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
